@@ -3,7 +3,7 @@
 $('.pass_show').append('<span class="ptxt">Show</span>');
 displayEmpInfo();
 displayEmpTblData();
-
+alert('fine');
 $(document).on('click', '.pass_show .ptxt', function () {
 
   $(this).text($(this).text() == "Show" ? "Hide" : "Show");

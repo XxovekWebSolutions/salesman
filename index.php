@@ -1,0 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION['admin_id'])){
+header('Location:public_html/dashboard.php');
+}
+else{
+    header('Location:public_html/pages-signin.php');
+}
+?>

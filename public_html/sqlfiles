@@ -1,0 +1,3 @@
+SELECT salesManAssign.AssignId,salesManAssign.RouteId,salesManAssign.salesManId,salesManAssign.assignDate,RouteMaster.source,RouteMaster.destination FROM salesManAssign,RouteMaster WHERE salesManAssign.RouteId = RouteMaster.RouteId AND salesManAssign.salesManId = 2
+
+SELECT shopKeeperMaster.contactPerson FROM shopKeeperMaster,RouteMaster,RouteDetails WHERE shopKeeperMaster.shopKeeperId = RouteDetails.shopKeeperId AND RouteMaster.RouteId = RouteDetails.RouteId AND RouteDetails.RouteId = 1

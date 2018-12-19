@@ -1,0 +1,12 @@
+
+table.table td:nth-child(6){
+     max-width: 100px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+}
+table.table td:nth-child(6):hover{
+    overflow: visible;
+    white-space: normal;
+    height:auto;
+}
